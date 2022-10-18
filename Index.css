@@ -1,0 +1,134 @@
+/* this is the update one*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body {
+    background:#eee;
+}
+
+h1{
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-shadow:1px 1px 4px grey;
+    letter-spacing:-1px;
+    height:60px;
+    background:purple;
+}
+
+#main_container{
+    height:100vh;
+    background:#eee;
+}
+
+span{
+    font-size:1.1em;
+    padding:25px;
+    color:purple;
+    font-weight:bold;
+}
+
+.input{
+    padding:6px;
+    font-size:1.1em;
+    box-shadow:;
+    border:1px solid purple;
+    border-radius:50px;
+    width:200px;
+    outline:none;
+    background:white;
+}
+
+#play_button{
+    height:40px;
+    box-shadow:1px 1px 5px #fab;
+    border-radius:50px;
+    display:flex;
+    background:purple;
+    margin-top:26px;
+    width:200px;
+    font-size: 1.3em ;
+    border:none;
+    margin-left:65px;
+    justify-content:center ;
+    align-items:center ;
+    color:white;
+}
+
+#game_component{
+    display:flex;
+    flex-wrap:wrap;
+    background:black;
+    align-items:center;
+    justify-content:space-around;
+    width:250px;
+    height:250px;
+    margin:auto;
+    
+}
+
+#input_component{
+    height:;
+    display:none;
+    background:;
+}
+
+.cascas{
+    width:80px;
+    height:80px;
+    color:purple;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:80px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-around;
+    margin:42px 0;
+    background:#eee;
+}
+
+#first{
+    width:45%;
+    border:1px solid purple;
+    border-radius:5px;
+    height:30px;
+    padding:5px;
+}
+
+#second{
+    width:45%;
+    border:1px solid purple;
+    border-radius:5px;
+    height:30px;
+    padding:5px;
+}
+
+#replay{
+    margin-top:6px;
+    width:78%;
+    margin-left:43px;
+    margin-top:80px;
+    height:42px;
+    background:purple;
+    color:white;
+    border:none;
+    border-radius:7px;
+    font-weight:bold;
+    font-size:1.05em;
+}
+
+/*#replay:hover{
+    width:70%;
+}*/
+
+nav div{
+    background:white;
+}
