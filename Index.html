@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <h1>TICTACTOE</h1>
+        <section id="main_container">
+            <div id="input_component">
+                <span>X</span>
+                <input type="text" class="input" placeholder="player_1">
+                <br><br><br>
+                <span>O</span>
+                <input type="text" class="input" placeholder="player_2"> 
+                  <div  id="play_button">play</div>                 </div>
+                
+                
+            <!-here goes the second div-->
+            <nav>
+           
+             <div id="first">
+                 
+             </div>
+                  <div id="second">
+                    
+                  </div>  
+                
+            </nav>
+            <div id="game_component">
+                <div class="cascas" onclick="fa1()"></div>
+                <div class="cascas" onclick="fa2()" ></div>
+                <div class="cascas" onclick="fa3()" ></div>
+                <div class="cascas" onclick="fa4()" ></div>
+                <div class="cascas" onclick="fa5()" ></div>
+                <div class="cascas" onclick="fa6()" ></div>
+               <div class="cascas"  onclick="fa7()" ></div>
+               <div class="cascas"  onclick="fa8()" ></div>
+               <div class="cascas"  onclick="fa9()" ></div>
+               
+            </div>
+            
+            <input type="button" value="replay" id="replay" onclick="flick()">
+            
+            
+        </section>
+        
+        <script>
+            var sound= new Audio("https://proxy.notificationsounds.com/message-tones/pristine-609/download/file-sounds-1150-pristine.mp3");
+            var music= new Audio( "https://dl.dropbox.com/s/l23p1ggy1xetuh4/Eminem%20-%20My%20name%20is.mp3?dl=0");
+            var o = document.getElementsByClassName("cascas");
+            var a1 = o[0];
+            var a2 = o[1];
+            var a3 = o[2];
+            var a4 = o[3];
+            var a5 = o[4];
+            var a6 = o[5];
+            var a7 = o[6];
+            var a8 = o[7];
+            var a9 = o[8];
+
+var maincontainer  = document.getElementById("main_container");
+
+var X = "X";
+var O = "O";
+var Gcom = document.getElementById("play_button");
+
+var first = document.getElementById("first");
+var second = document.getElementById("second");
+ babu=0;
+ sfr=0;
+first.innerHTML="X : " + babu;
+second.innerHTML="O : " + sfr;
+
+function flick(){
+    for(i=0; i<o.length; i++){
+       o[i].innerHTML="";}
+}
+
+num = 0;
+
+function fa1(){
+        if(num%2==0){
+              a1.innerHTML=X;}
+        else{
+             a1.innerHTML = O;}
+       num++;
+       always();
+        }
+
+
+function fa2(){
+        if(num%2==0){
+              a2.innerHTML =X;}
+        else{
+             a2.innerHTML =O;}
+       num++;
+       always();
+        }
+
+function fa3(){
+        if(num%2==0){
+              a3.innerHTML =X;}
+        else{
+             a3.innerHTML =O;}
+       num++; 
+       always();
+       }
+
+function fa4(){
+        if(num%2==0){
+              a4.innerHTML =X;}
+        else{
+             a4.innerHTML =O;}
+       num++; 
+       always();
+       }
+
+function fa5(){
+        if(num%2==0){
+              a5.innerHTML =X;}
+        else{
+             a5.innerHTML =O;}
+       num++; 
+       always();
+       }
+
+function fa6(){
+        if(num%2==0){
+              a6.innerHTML =X;}
+        else{
+             a6.innerHTML =O;}
+       num++; 
+       always();
+       }
+
+function fa7(){
+        if(num%2==0){
+              a7.innerHTML =X;}
+        else{
+             a7.innerHTML =O;}
+       num++; 
+       always();
+       }
+       
+       function fa8(){
+        if(num%2==0){
+              a8.innerHTML =X;}
+        else{
+             a8.innerHTML =O;}
+       num++; 
+       always();
+       }
+       
+       function fa9(){
+        if(num%2==0){
+              a9.innerHTML =X;}
+        else{
+             a9.innerHTML =O;}
+       num++; 
+       always();
+       }
+       
+       function always(){
+           var ac = [a1.innerText, a2.innerText,a3.innerText, a4.innerText,a5.innerText, a6.innerText,a7.innerText, a8.innerText,a9.innerText];
+            
+        if((ac[0]==X && ac[1]==X && ac[2]==X)
+        || (ac[0]==X && ac[3]==X && ac[6]==X)
+        || (ac[0]==X && ac[4]==X && ac[8]==X)
+        || (ac[2]==X && ac[5]==X && ac[8]==X)
+        || (ac[2]==X && ac[4]==X && ac[6]==X)
+        || (ac[0]==X && ac[1]==X && ac[2]==X)
+        || (ac[3]==X && ac[4]==X && ac[5]==X)
+        || (ac[6]==X && ac[7]==X && ac[8]==X)
+        || (ac[2]==X && ac[5]==X && ac[8]==X)
+        ||(ac[1]==X && ac[4]==X && ac[7]=="X")
+        
+        ){
+            sound.play();
+            alert("player X wins");
+            for(i=0; i<o.length; i++){
+                o[i].innerHTML="";
+            }
+            babu++
+            first.innerHTML="X : " + babu;
+        }else if(
+            (ac[0]==O && ac[1]==O && ac[2]==O)
+        || (ac[0]==O && ac[3]==O && ac[6]==O)
+        || (ac[0]==O && ac[4]==O && ac[8]==O)
+        || (ac[2]==O && ac[5]==O && ac[8]==O)
+        || (ac[2]==O && ac[4]==O && ac[6]==O)
+        || (ac[0]==O && ac[1]==O && ac[2]==O)
+        || (ac[3]==O && ac[4]==O && ac[5]==O)
+        || (ac[6]==O && ac[7]==O && ac[8]==O)
+        || (ac[2]==O && ac[5]==O && ac[8]==O)
+        || (ac[1]==O && ac[4]==O && ac[7]==O)
+        ){
+            sound.play();
+            alert("player O wins");
+            for(i=0; i<o.length; i++){
+                o[i].innerHTML="";
+            }
+            sfr++
+            second.innerHTML = "O : " + sfr;
+            
+        }
+        
+       }
+         </script>
+         
+    </body>
+</html>
