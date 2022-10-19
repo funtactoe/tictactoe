@@ -6,7 +6,6 @@
 }
 body {
     background:#eee;
-    width:100%;
 }
 
 h1{
@@ -98,6 +97,7 @@ nav{
 .center{
     width:100%;
     margin-top:90px;
+    background:red;
 }
 
 #first{
