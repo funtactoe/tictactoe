@@ -126,6 +126,7 @@ nav{
     border-radius:7px;
     font-weight:bold;
     font-size:1.05em;
+    disply:block;
 }
 
 /*#replay:hover{
