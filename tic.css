@@ -97,7 +97,7 @@ nav{
 .center{
     width:100%;
     margin-top:90px;
-    background:red;
+    /*background:red;*/
 }
 
 #first{
@@ -118,7 +118,7 @@ nav{
 
 #replay{
     width:78%;
-    margin:auto;
+    margin:0 auto;
     height:42px;
     background:purple;
     color:white;
