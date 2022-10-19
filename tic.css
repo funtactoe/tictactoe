@@ -6,6 +6,7 @@
 }
 body {
     background:#eee;
+    width:100%;
 }
 
 h1{
@@ -93,6 +94,9 @@ nav{
     justify-content:space-around;
     margin:42px 0;
     background:#eee;
+}
+section {
+    width:100%;
 }
 
 #first{
